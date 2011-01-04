@@ -1,0 +1,19 @@
+A Simple web Appliction in Symfony
+===================================
+The intended use of this application is for a manager to assign tasks to each of his employee. Each employee can update the status (open, working or closed) on the tasks assigned to him/her, which can be later verified by the manager. The application has two sections: employee section and managerial section.
+Run the application using:
+   http://localhost:8080/
+
+For verification sample input:
+  Employee:
+    u name:sumith
+    p word:sumith
+  Manager:
+    username:admin
+    password:admin
+  
+Limitations:
+  
+1.Maximum number of task assigned to each employee is limited to three.
+2.The authentication mechanism is static in the managerial section.
+ 

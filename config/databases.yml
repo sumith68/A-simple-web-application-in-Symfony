@@ -1,0 +1,15 @@
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=localhost;dbname=my_db'
+      username: root
+      password: asdfgh
+      attributes:
+        quote_identifier: false
+        use_native_enum: false
+        validate: all
+        idxname_format: %s_idx
+        seqname_format: %s_seq
+        tblname_format: %s
+
