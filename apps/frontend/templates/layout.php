@@ -4,7 +4,6 @@
     <?php include_http_metas() ?>
     <?php include_metas() ?>
     <?php include_title() ?>
-    <img src="/home/sfprojects/my_proj/web/images/scene" width="800" height="600" />
     <a href="http://localhost:8080">HOME</a>
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>

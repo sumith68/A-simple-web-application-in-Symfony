@@ -27494,3 +27494,75 @@ Jan 04 11:13:58 symfony [info] {sfWebDebugLogger} Factories 28.46 ms (1)
 Jan 04 11:13:58 symfony [info] {sfWebDebugLogger} Action "user/thankyou" 0.10 ms (1)
 Jan 04 11:13:58 symfony [info] {sfWebDebugLogger} View "Success" for "user/thankyou" 9.42 ms (1)
 Jan 04 11:13:58 symfony [info] {sfWebResponse} Send content (29389 o)
+Jan 04 11:28:58 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/index with parameters array (  'module' => 'user',  'action' => 'index',)
+Jan 04 11:28:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 04 11:28:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 04 11:28:58 symfony [info] {userActions} Call "userActions->executeIndex()"
+Jan 04 11:28:58 symfony [info] {sfPHPView} Render "/home/sfprojects/my_proj/apps/frontend/modules/user/templates/indexSuccess.php"
+Jan 04 11:28:58 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/my_proj/apps/frontend/templates/layout.php"
+Jan 04 11:28:58 symfony [info] {sfPHPView} Render "/home/sfprojects/my_proj/apps/frontend/templates/layout.php"
+Jan 04 11:28:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 04 11:28:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 04 11:28:58 symfony [info] {sfWebDebugLogger} Configuration 1.16 ms (9)
+Jan 04 11:28:58 symfony [info] {sfWebDebugLogger} Factories 26.05 ms (1)
+Jan 04 11:28:58 symfony [info] {sfWebDebugLogger} Action "user/index" 4.39 ms (1)
+Jan 04 11:28:58 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 9.92 ms (1)
+Jan 04 11:28:58 symfony [info] {sfWebResponse} Send content (28119 o)
+Jan 04 11:35:52 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /admin/manager_option with parameters array (  'module' => 'admin',  'action' => 'manager_option',)
+Jan 04 11:35:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 04 11:35:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 04 11:35:52 symfony [info] {adminActions} Call "adminActions->executeManager_option()"
+Jan 04 11:35:52 symfony [info] {sfPHPView} Render "/home/sfprojects/my_proj/apps/frontend/modules/admin/templates/manager_optionSuccess.php"
+Jan 04 11:35:52 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/my_proj/apps/frontend/templates/layout.php"
+Jan 04 11:35:52 symfony [info] {sfPHPView} Render "/home/sfprojects/my_proj/apps/frontend/templates/layout.php"
+Jan 04 11:35:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 04 11:35:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 04 11:35:52 symfony [info] {sfWebDebugLogger} Configuration 1.18 ms (9)
+Jan 04 11:35:52 symfony [info] {sfWebDebugLogger} Factories 31.07 ms (1)
+Jan 04 11:35:52 symfony [info] {sfWebDebugLogger} Action "admin/manager_option" 0.10 ms (1)
+Jan 04 11:35:52 symfony [info] {sfWebDebugLogger} View "Success" for "admin/manager_option" 8.10 ms (1)
+Jan 04 11:35:52 symfony [info] {sfWebResponse} Send content (27413 o)
+Jan 04 11:35:59 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/index with parameters array (  'module' => 'user',  'action' => 'index',)
+Jan 04 11:35:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 04 11:35:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 04 11:35:59 symfony [info] {userActions} Call "userActions->executeIndex()"
+Jan 04 11:35:59 symfony [info] {sfPHPView} Render "/home/sfprojects/my_proj/apps/frontend/modules/user/templates/indexSuccess.php"
+Jan 04 11:35:59 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/my_proj/apps/frontend/templates/layout.php"
+Jan 04 11:35:59 symfony [info] {sfPHPView} Render "/home/sfprojects/my_proj/apps/frontend/templates/layout.php"
+Jan 04 11:35:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 04 11:35:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 04 11:35:59 symfony [info] {sfWebDebugLogger} Configuration 1.28 ms (9)
+Jan 04 11:35:59 symfony [info] {sfWebDebugLogger} Factories 26.48 ms (1)
+Jan 04 11:35:59 symfony [info] {sfWebDebugLogger} Action "user/index" 4.23 ms (1)
+Jan 04 11:35:59 symfony [info] {sfWebDebugLogger} View "Success" for "user/index" 10.64 ms (1)
+Jan 04 11:35:59 symfony [info] {sfWebResponse} Send content (28320 o)
+Jan 04 11:40:08 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/submit with parameters array (  'module' => 'user',  'action' => 'submit',)
+Jan 04 11:40:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 04 11:40:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 04 11:40:08 symfony [info] {userActions} Call "userActions->executeSubmit()"
+Jan 04 11:40:08 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 04 11:40:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT v.id AS v__id, v.p_word AS v__p_word FROM validates v WHERE (v.u_name = ? AND v.p_word = ?) - (sumith, sumith)
+Jan 04 11:40:08 symfony [info] {Doctrine_Connection_Statement} execute : SELECT m.id AS m__id, m.title AS m__title, m.status AS m__status, m.deadline AS m__deadline, m.assignsto AS m__assignsto FROM manager m WHERE (m.assignsto = ?) - (sumith)
+Jan 04 11:40:08 symfony [info] {sfFrontWebController} Redirect to "http://localhost:8080/frontend_dev.php/user/thankyou/0%5Bid%5D/1/0%5Btitle%5D/study+RoR/0%5Bstatus%5D/working/0%5Bdeadline%5D/4-01-2011/0%5Bassignsto%5D/sumith/1%5Bid%5D/6/1%5Btitle%5D/Study+Sinatra/1%5Bstatus%5D/working/1%5Bdeadline%5D/2-3-2011/1%5Bassignsto%5D/sumith"
+Jan 04 11:40:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 302 Found"
+Jan 04 11:40:08 symfony [info] {sfWebResponse} Send header "Location: http://localhost:8080/frontend_dev.php/user/thankyou/0%5Bid%5D/1/0%5Btitle%5D/study+RoR/0%5Bstatus%5D/working/0%5Bdeadline%5D/4-01-2011/0%5Bassignsto%5D/sumith/1%5Bid%5D/6/1%5Btitle%5D/Study+Sinatra/1%5Bstatus%5D/working/1%5Bdeadline%5D/2-3-2011/1%5Bassignsto%5D/sumith"
+Jan 04 11:40:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 04 11:40:08 symfony [info] {sfWebDebugLogger} Configuration 1.11 ms (8)
+Jan 04 11:40:08 symfony [info] {sfWebDebugLogger} Factories 29.44 ms (1)
+Jan 04 11:40:08 symfony [info] {sfWebDebugLogger} Action "user/submit" 36.13 ms (1)
+Jan 04 11:40:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Jan 04 11:40:08 symfony [info] {sfWebResponse} Send content (340 o)
+Jan 04 11:40:08 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /user/thankyou/0[id]/1/0[title]/study+RoR/0[status]/working/0[deadline]/4-01-2011/0[assignsto]/sumith/1[id]/6/1[title]/Study+Sinatra/1[status]/working/1[deadline]/2-3-2011/1[assignsto]/sumith with parameters array (  'module' => 'user',  'action' => 'thankyou',  '0[id]' => '1',  '0[title]' => 'study RoR',  '0[status]' => 'working',  '0[deadline]' => '4-01-2011',  '0[assignsto]' => 'sumith',  '1[id]' => '6',  '1[title]' => 'Study Sinatra',  '1[status]' => 'working',  '1[deadline]' => '2-3-2011',  '1[assignsto]' => 'sumith',)
+Jan 04 11:40:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 04 11:40:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 04 11:40:08 symfony [info] {userActions} Call "userActions->executeThankyou()"
+Jan 04 11:40:08 symfony [info] {sfPHPView} Render "/home/sfprojects/my_proj/apps/frontend/modules/user/templates/thankyouSuccess.php"
+Jan 04 11:40:08 symfony [info] {sfPHPView} Decorate content with "/home/sfprojects/my_proj/apps/frontend/templates/layout.php"
+Jan 04 11:40:08 symfony [info] {sfPHPView} Render "/home/sfprojects/my_proj/apps/frontend/templates/layout.php"
+Jan 04 11:40:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 04 11:40:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 04 11:40:08 symfony [info] {sfWebDebugLogger} Configuration 1.27 ms (9)
+Jan 04 11:40:08 symfony [info] {sfWebDebugLogger} Factories 26.02 ms (1)
+Jan 04 11:40:08 symfony [info] {sfWebDebugLogger} Action "user/thankyou" 0.11 ms (1)
+Jan 04 11:40:08 symfony [info] {sfWebDebugLogger} View "Success" for "user/thankyou" 8.66 ms (1)
+Jan 04 11:40:08 symfony [info] {sfWebResponse} Send content (30224 o)
