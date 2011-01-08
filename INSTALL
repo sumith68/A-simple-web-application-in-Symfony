@@ -1,0 +1,87 @@
+Installaton of the web application in Symfony
+===============================================
+
+First of all install the LAMP server on the machine.The steps are follows.I am using Ubuntu 10.04.
+Apache2
+~~~~~~~
+   apt-get install apache2
+
+PHP5
+~~~~
+   apt-get install php5 libapache2-mod-php5
+
+MySQL
+~~~~~
+   apt-get install mysql-server
+    
+sudo apt-get install phpmyadmin
+
+
+Create a directory 
+mkdir -p /home/sfprojects/my_proj
+cd /home/sfprojects/my_proj
+ 
+Clone the GitHub repo and put everything under the my_proj directory
+
+Set the write permissions on the cache/ and log/ directory using the command.
+
+$ chmod 777 cache/ log/
+
+Locate and open the httpd.conf configuration file and add the following configuration at the end:
+
+++++++++++++++++++++++++++++++++++++++++++++++
+# Be sure to only have this line once in your configuration
+NameVirtualHost 127.0.0.1:8080
+# This is the configuration for your project
+Listen 127.0.0.1:8080
+<VirtualHost 127.0.0.1:8080>
+DocumentRoot "/home/sfprojects/my_proj/web"
+DirectoryIndex index.php
+<Directory "/home/sfprojects/my_proj/web">
+AllowOverride All
+Allow from All
+</Directory>
+
+Alias /sf /home/sfprojects/my_proj/lib/vendor/symfony/data/web/sf
+<Directory "/home/sfprojects/my_proj/lib/vendor/symfony/data/web/sf">
+AllowOverride All
+Allow from All
+</Directory>
+</VirtualHost>
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+set the write permission to frontend_dev.log file in the log directory.
+
+create a database named my_db in MySQL using the query:
+
+ceate database my_db;
+
+create two tables manager,validates using the query
+
+CREATE TABLE manager (id INT AUTO_INCREMENT, title VARCHAR(255), status VARCHAR(255), deadline VARCHAR(255), assignsto VARCHAR(255), PRIMARY KEY(id)) ENGINE = INNODB;
+
+CREATE TABLE validates (id INT AUTO_INCREMENT, u_name VARCHAR(255), p_word VARCHAR(255), PRIMARY KEY(id)) ENGINE = INNODB;
+
+Run the application in the browser using:
+
+http://localhost:8080/
+
+Then a welcome screen is displayed with two links Employee and Manager.
+Click the Manager link. Go to the next page there we require username and password:
+
+username=admin
+password=admin
+
+After submitting the username and password we go to the next page. There the options available for the manager are displayed.
+
+Create Newuser: create a new user with a particular username and password.
+Assign Task: The manager can assign task to the user
+
+Verify Task: Manager can verify status of the task
+
+Manager should enter some initial data to populate the database.
+
+
+
+
+
